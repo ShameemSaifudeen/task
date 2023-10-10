@@ -6,13 +6,12 @@ const SideBar = () => {
   return (
     <>
       <Box
-        width="330px"
+        width="427px"
         borderRadius="xl"
         border="1.5px solid"
         borderColor="gray.200"
         boxShadow="md"
         padding="20px"
-        height="954px"
       >
         <SideBarUpperSection />
         <SideBarLowerSection />

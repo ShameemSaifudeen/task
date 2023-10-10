@@ -5,23 +5,31 @@ interface SideBarButtonsProps {
   isActive: boolean;
 }
 
-
-
-const SideBarButtons : React.FC<SideBarButtonsProps> = ({ icon, label, isActive }) => {
+const SideBarButtons: React.FC<SideBarButtonsProps> = ({
+  icon,
+  label,
+  isActive,
+}) => {
   return (
     <>
-      <Button
-        leftIcon={icon}
-        colorScheme="blue"
-        bg={isActive ? "blue.500" : "white"} 
-        color={isActive ? "white" : "blue.500"}
-        border="1px solid"
-        borderColor="blue.500"
-        borderRadius="md"
-        width="100%"
-        justifyContent="flex-start"
-        marginBottom="16px" 
-      >
+      <Button 
+    fontFamily="Work Sans"
+    fontSize="16px"
+    fontWeight="500"
+    lineHeight="21px"
+    letterSpacing="0em"
+    textAlign="center"
+    leftIcon={icon}
+    colorScheme="blue"
+    bg={isActive ? "#0063FF" : "white"}
+    color={isActive ? "white" : "#0063FF"}
+    border="1px solid"
+    borderColor="#0063FF"
+    borderRadius="md"
+    width="100%"
+    justifyContent="flex-start"
+    marginBottom="16px"
+>
         {label}
       </Button>
     </>

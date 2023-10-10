@@ -13,9 +13,9 @@ const GeneralBoxInfo = () => {
       boxShadow="md"
       padding="20px"
       marginLeft="20px"
-      //   height="70%"
     >
       <Text
+        fontFamily="Work Sans"
         fontSize="24px"
         fontWeight="600"
         lineHeight="26px"
@@ -27,9 +27,9 @@ const GeneralBoxInfo = () => {
       </Text>
       <Divider my="2" borderColor="#AFB0B4" />
       <GeneralBodyInfo />
-      <Box margin="20px" />
+      <Box margin="25px" />
       <Location />
-      <Box margin="20px" />
+      <Box margin="25px" />
       <AdditionalInfo />
     </Box>
   );

@@ -4,7 +4,7 @@ import TableBox from "../TableBox/TableBox";
 
 const RightSection = () => {
   return (
-    <Box width="70%">
+    <Box width="1325px">
       <GeneralBoxInfo />
       <Box margin="20px" />
       <TableBox />

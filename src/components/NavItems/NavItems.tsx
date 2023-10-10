@@ -22,13 +22,19 @@ const NavItem: React.FC<NavItemProps> = ({
         as={Link}
         to={to}
         size="xs"
+        fontFamily="Work Sans"
+        fontSize="16px"
+        fontWeight="500"
+        lineHeight="21px"
+        letterSpacing="0em"
         colorScheme="blue"
         variant={isActive ? "solid" : "ghost"}
         color={isActive ? "white" : "black"}
-        background={isActive ? "blue.500" : "none"}
+        background={isActive ? "#0063FF1A" : "none"}
         textDecoration="none"
         boxShadow="none"
         paddingTop="0.2rem"
+        marginLeft="3px"
       >
         {label}
       </Button>

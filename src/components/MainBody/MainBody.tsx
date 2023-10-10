@@ -7,9 +7,10 @@ const MainBody = () => {
   return (
     <div className="main__body">
       <Text
-        fontSize="25px"
+        fontFamily="Work Sans"
+        fontSize="32px"
         fontWeight="600"
-        lineHeight="21px"
+        lineHeight="38px"
         letterSpacing="0em"
         textAlign="left"
         color="#0063FF"
@@ -17,6 +18,7 @@ const MainBody = () => {
       >
         Machine Details
       </Text>
+
       <Box display="flex">
         <SideBar />
         <RightSection />

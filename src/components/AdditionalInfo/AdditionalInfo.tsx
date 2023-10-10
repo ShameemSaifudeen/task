@@ -1,4 +1,18 @@
-import { Box, Button, Divider, Flex, Grid, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Divider,
+  Flex,
+  Grid,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalHeader,
+  ModalOverlay,
+  Text,
+} from "@chakra-ui/react";
 import { useState } from "react";
 
 const AdditionalInfo = () => {
@@ -8,6 +22,7 @@ const AdditionalInfo = () => {
     <>
       <Flex justifyContent="space-between" alignItems="center">
         <Text
+          fontFamily="Work Sans"
           fontSize="24px"
           fontWeight="600"
           lineHeight="26px"
@@ -17,7 +32,20 @@ const AdditionalInfo = () => {
         >
           Additional Info
         </Text>
-        <Button colorScheme="blue" onClick={() => setIsOpen(true)}>Edit</Button>
+        <Button
+          fontFamily="Work Sans"
+          fontSize="16px"
+          fontWeight="500"
+          lineHeight="21px"
+          letterSpacing="0em"
+          textAlign="center"
+          colorScheme="blue"
+          backgroundColor="#0063FF"
+          height="40px"
+          onClick={() => setIsOpen(true)}
+        >
+          Edit
+        </Button>
       </Flex>
       <Divider my="2" borderColor="#AFB0B4" />
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -25,69 +53,184 @@ const AdditionalInfo = () => {
         <ModalContent>
           <ModalHeader>Edit Info</ModalHeader>
           <ModalCloseButton />
-          <ModalBody>
-          </ModalBody>
+          <ModalBody></ModalBody>
           <ModalFooter>
             <Button colorScheme="blue" mr={3} onClick={onClose}>
               Save
             </Button>
-            <Button variant="ghost" onClick={onClose}>Cancel</Button>
+            <Button variant="ghost" onClick={onClose}>
+              Cancel
+            </Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
       <Grid templateColumns="repeat(4, 1fr)" gap={6}>
-        <Box padding="20px">
-          <Text fontSize="12px" color="#6B6B6B" marginBottom="10px">
+        <Box paddingTop="20px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="12px"
+            fontWeight="400"
+            lineHeight="14px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#6B6B6B"
+            marginBottom="10px"
+          >
             Installation Date
           </Text>
-          <Text as="b" fontSize="16px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="16px"
+            fontWeight="500"
+            lineHeight="19px"
+            letterSpacing="0em"
+            textAlign="left"
+          >
             07/09/23
           </Text>
         </Box>
-        <Box padding="20px">
-          <Text fontSize="12px" color="#6B6B6B" marginBottom="10px">
+        <Box paddingTop="20px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="12px"
+            fontWeight="400"
+            lineHeight="14px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#6B6B6B"
+            marginBottom="10px"
+          >
             Site Segment
           </Text>
-          <Text as="b" fontSize="16px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="16px"
+            fontWeight="500"
+            lineHeight="19px"
+            letterSpacing="0em"
+            textAlign="left"
+          >
             Public Space
           </Text>
         </Box>{" "}
-        <Box padding="20px">
-          <Text fontSize="12px" color="#6B6B6B" marginBottom="10px">
+        <Box paddingTop="20px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="12px"
+            fontWeight="400"
+            lineHeight="14px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#6B6B6B"
+            marginBottom="10px"
+          >
             Area Manager
           </Text>
-          <Text as="b" fontSize="16px" color="#0063FF">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="16px"
+            fontWeight="500"
+            lineHeight="19px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#0063FF"
+          >
             Michael Thorn
           </Text>
         </Box>
       </Grid>
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
-        <Box padding="20px">
-          <Text fontSize="12px" color="#6B6B6B" marginBottom="10px">
+        <Box paddingTop="20px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="12px"
+            fontWeight="400"
+            lineHeight="14px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#6B6B6B"
+            marginBottom="10px"
+          >
             Machine Group
           </Text>
-          <Text as="b" fontSize="16px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="16px"
+            fontWeight="500"
+            lineHeight="19px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#0063FF"
+          >
             Milton Keynes Machines
           </Text>
         </Box>
-        <Box padding="20px">
-          <Text fontSize="12px" color="#6B6B6B" marginBottom="10px">
+        <Box paddingTop="20px">
+          <Text
+            fontFamily="Work Sans"
+            fontSize="12px"
+            fontWeight="400"
+            lineHeight="14px"
+            letterSpacing="0em"
+            textAlign="left"
+            color="#6B6B6B"
+            marginBottom="10px"
+          >
             Machine Labels
           </Text>
           <Grid templateColumns="repeat(3, 1fr)" gap={6}>
-            <Box backgroundColor="#0063FF40" borderRadius="25px">
-              <Text align="center" fontSize="12px">
+            <Box
+              backgroundColor="#0063FF40"
+              borderRadius="20px"
+              width="159px"
+              height="18px"
+            >
+              <Text
+                fontFamily="Work Sans"
+                fontSize="12px"
+                fontWeight="600"
+                lineHeight="14px"
+                letterSpacing="0em"
+                textAlign="center"
+                color="#003994"
+              >
                 {" "}
                 South-East England
               </Text>
             </Box>
-            <Box backgroundColor="#0063FF40" borderRadius="25px">
-              <Text align="center" fontSize="12px">
+            <Box
+              backgroundColor="#0063FF40"
+              borderRadius="25px"
+              width="159px"
+              height="18px"
+            >
+              <Text
+                fontFamily="Work Sans"
+                fontSize="12px"
+                fontWeight="600"
+                lineHeight="14px"
+                letterSpacing="0em"
+                textAlign="center"
+                color="#003994"
+              >
                 Milton Keynes Region
               </Text>
             </Box>
-            <Box backgroundColor="#0063FF40" borderRadius="25px">
-              <Text align="center" fontSize="12px">
+            <Box
+              backgroundColor="#0063FF40"
+              borderRadius="25px"
+              width="159px"
+              height="18px"
+            >
+              <Text
+                fontFamily="Work Sans"
+                fontSize="12px"
+                fontWeight="600"
+                lineHeight="14px"
+                letterSpacing="0em"
+                textAlign="center"
+                color="#003994"
+              >
                 2022 Best Performers
               </Text>
             </Box>
